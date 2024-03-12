@@ -5,6 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --firstColor:#001c5f;
+  --secColor:#0081e9;
+  --thirdColor:#de58a3;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -140,7 +143,9 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none; 
+  width: 153px;
+}
 
 svg {
   overflow: hidden;
@@ -1681,7 +1686,7 @@ h1, h2, h3, h4,
   font-weight: 400; }
 
 .wrap {
-  background: #0f7fd9;
+  background: var(--thirdColor);
   padding: 0; }
   .wrap .phone {
     font-size: 12px;
@@ -1727,7 +1732,7 @@ h1, h2, h3, h4,
     font-size: 20px;
     line-height: 1; }
     .ftco-navbar-light .navbar-brand span {
-      color: #f3e53d;
+      color: var(--thirdColor);
       position: relative; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
       color: #000000; }
@@ -1756,7 +1761,7 @@ h1, h2, h3, h4,
       height: 2px;
       bottom: 0px;
       left: 0;
-      background-color: #f3e53d;
+      background-color: var(--thirdColor);
       visibility: hidden;
       -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -1766,10 +1771,10 @@ h1, h2, h3, h4,
       transition: all 0.5s ease-in-out 0s;
       z-index: -1; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #f3e53d; }
+      color: var(--thirdColor); }
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
         visibility: visible;
-        background-color: #f3e53d;
+        background-color: var(--thirdColor);
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
@@ -1804,10 +1809,10 @@ h1, h2, h3, h4,
         -webkit-box-shadow: none;
         box-shadow: none; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #f3e53d; }
+    color: var(--thirdColor); }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
       visibility: visible;
-      background-color: #f3e53d;
+      background-color: var(--thirdColor);
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
       transform: scaleX(1); }
@@ -1977,7 +1982,7 @@ h1, h2, h3, h4,
   background: #f8f9fd !important; }
 
 .bg-secondary {
-  background: #f3e53d !important; }
+  background: var(--thirdColor) !important; }
 
 .bg-primary {
   background: #2b98f0 !important; }
@@ -2003,13 +2008,13 @@ h1, h2, h3, h4,
       background: transparent;
       color: #2b98f0; }
   .btn.btn-secondary {
-    background: #f3e53d;
-    border: 1px solid #f3e53d;
+    background: var(--thirdColor);
+    border: 1px solid var(--thirdColor);
     color: #000000; }
     .btn.btn-secondary:hover {
-      border: 1px solid #f3e53d;
+      border: 1px solid var(--thirdColor);
       background: transparent;
-      color: #f3e53d; }
+      color: var(--thirdColor); }
 
 .ftco-intro {
   position: relative;
@@ -2039,7 +2044,7 @@ h1, h2, h3, h4,
   .ftco-intro .icon-video {
     width: 80px;
     height: 80px;
-    background: #f3e53d;
+    background: var(--thirdColor);
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
     display: inline-block;
@@ -2097,7 +2102,7 @@ h1, h2, h3, h4,
       right: 5px;
       content: '';
       height: 5px;
-      background: #f3e53d;
+      background: var(--thirdColor);
       border-radius: 0 0 3px 3px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
@@ -2106,7 +2111,7 @@ h1, h2, h3, h4,
       transition: all 0.3s ease; }
     .services .icon span {
       font-size: 40px;
-      color: #f3e53d; }
+      color: var(--thirdColor); }
   .services .media-body h3 {
     font-weight: 500;
     font-size: 18px;
@@ -2118,8 +2123,8 @@ h1, h2, h3, h4,
     color: #000000;
     border-bottom: 2px solid #e6e6e6; }
     .services .btn-custom:hover {
-      color: #f3e53d;
-      border-color: #f3e53d; }
+      color: var(--thirdColor);
+      border-color: var(--thirdColor); }
 
 #section-counter {
   position: relative;
@@ -2128,7 +2133,7 @@ h1, h2, h3, h4,
 .ftco-counter {
   overflow-x: hidden;
   position: relative;
-  background: #f3e53d; }
+  background: var(--thirdColor); }
   @media (min-width: 992px) {
     .ftco-counter {
       padding-left: 30px;
@@ -2196,7 +2201,7 @@ h1, h2, h3, h4,
       right: 7px;
       height: 7px;
       content: '';
-      background: #f3e53d;
+      background: var(--thirdColor);
       border-radius: 0 0 3px 3px; }
     .staff .text h3 {
       font-size: 18px;
@@ -2234,7 +2239,7 @@ h1, h2, h3, h4,
         color: #2b98f0;
         width: 30px;
         height: 30px;
-        background: #f3e53d;
+        background: var(--thirdColor);
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -2244,7 +2249,7 @@ h1, h2, h3, h4,
   .staff:hover .img, .staff:focus .img {
     margin-top: -10px; }
   .staff:hover .text, .staff:focus .text {
-    background: #f3e53d; }
+    background: var(--thirdColor); }
     .staff:hover .text:after, .staff:focus .text:after {
       background: #2b98f0; }
     .staff:hover .text h3, .staff:focus .text h3 {
@@ -2277,7 +2282,7 @@ h1, h2, h3, h4,
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 10px;
-      color: #f3e53d; }
+      color: var(--thirdColor); }
     .time-open-wrap .desc .heading {
       font-size: 18px;
       font-weight: 700;
@@ -2291,7 +2296,7 @@ h1, h2, h3, h4,
     font-size: 14px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.8);
-    color: #f3e53d; }
+    color: var(--thirdColor); }
   .time-open-wrap .opening-hours p span {
     display: block;
     color: rgba(255, 255, 255, 0.8); }
@@ -2371,7 +2376,7 @@ h1, h2, h3, h4,
   height: inherit !important; }
 
 .appointment .btn-primary:hover {
-  color: #f3e53d !important; }
+  color: var(--thirdColor) !important; }
 
 .work {
   display: block;
@@ -2424,7 +2429,7 @@ h1, h2, h3, h4,
     height: 70px;
     content: '';
     z-index: 1;
-    background: #f3e53d;
+    background: var(--thirdColor);
     -webkit-transform: translate(50%, 50%);
     -ms-transform: translate(50%, 50%);
     transform: translate(50%, 50%);
@@ -2491,7 +2496,7 @@ h1, h2, h3, h4,
     margin-bottom: 15px;
     color: #999999; }
     .block-7 .pricing-text li span.fa {
-      color: #f3e53d; }
+      color: var(--thirdColor); }
   .block-7 .btn-primary {
     display: inline-block; }
   .block-7:hover, .block-7:focus {
@@ -2603,12 +2608,12 @@ textarea.form-control {
     margin-bottom: 15px;
     color: #999999; }
     .block-7 .pricing-text li span.fa {
-      color: #f3e53d;
+      color: var(--thirdColor);
       font-size: 12px; }
   .block-7 .btn-primary {
     display: inline-block; }
   .block-7:hover, .block-7:focus, .block-7.active {
-    background: #f3e53d;
+    background: var(--thirdColor);
     -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11); }
@@ -2642,7 +2647,7 @@ textarea.form-control {
       content: '';
       width: 30px;
       height: 4px;
-      background: #f3e53d; }
+      background: var(--thirdColor); }
   .footer ul.list-unstyled li a {
     color: rgba(255, 255, 255, 0.7); }
   .footer .block-21 .text .heading a {
@@ -2824,9 +2829,9 @@ textarea.form-control {
       .testimony-section .owl-dots .owl-dot:after {
         border-color: #cccccc; }
       .testimony-section .owl-dots .owl-dot.active {
-        background: #f3e53d; }
+        background: var(--thirdColor); }
         .testimony-section .owl-dots .owl-dot.active:after {
-          border-color: #f3e53d; }
+          border-color: var(--thirdColor); }
 
 .testimony-wrap {
   display: block;
@@ -2843,7 +2848,7 @@ textarea.form-control {
     right: 5px;
     content: '';
     height: 5px;
-    background: #f3e53d;
+    background: var(--thirdColor);
     border-radius: 0 0 3px 3px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2857,7 +2862,7 @@ textarea.form-control {
     .testimony-wrap .icon span {
       font-size: 40px;
       color: rgba(255, 255, 255, 0.05);
-      color: #f3e53d; }
+      color: var(--thirdColor); }
   .testimony-wrap .user-img {
     width: 70px;
     height: 70px;
@@ -3044,7 +3049,7 @@ textarea.form-control {
       right: 5px;
       content: '';
       height: 5px;
-      background: #f3e53d;
+      background: var(--thirdColor);
       border-radius: 0 0 3px 3px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
