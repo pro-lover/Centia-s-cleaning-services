@@ -77,33 +77,91 @@ body {
   z-index: 999;
   top: 200px;
   left: 40%;
-  text-align: center;
-
-
 }
 
+.Gauteng {
+  display: none;
+}
+.Mpumalanga {
+  display: none;
+}
+.form-check {
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+.form-check  + .form-check  {
+  margin-top: 1em;
+}
+.form-check:focus-within {
+  color: var(--firstColor);
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  color: var(--forthColor);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--forthColor);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  
+  display: grid;
+  place-content: center;
+}
+.form-check input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--forthColor);
+}
+
+.form-check input[type="radio"]:checked::before {
+  transform: scale(1);
+}
 
 .form-container #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
-.form-container #contact {
+.form-container form {
 	background:#ffffff;
   border-radius: 10px;
 	padding:25px;
 	margin:0px 0;
   width: 100%;
 }
+.button-container { 
+  height: 30px;
+  position: relative;
+}
 
-.form-container #contact h2 {
+.button-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.form-container form h1 {
 	color: var(--forthColor);
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
+    text-align: center;
 }
 
-.form-container #contact h4 {
+.form-container form h4 {
 	margin:5px 0 15px;
 	display:block;
 	font-size:13px;
+    text-align: center;
 }
 
 .form-container fieldset {
@@ -658,11 +716,13 @@ button::-moz-focus-inner,
   padding: 0;
   border-style: none; }
 
-input[type="radio"],
+
 input[type="checkbox"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+
+}
 
 
 input[type="time"] {
@@ -1011,12 +1071,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff; }
+  background-color: var(--secColor);
+  border-color: var(--secColor); }
   .btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc; }
+    color: var(--forthColor);
+    background-color: #0069d900;
+    border-color: var(--secColor);
+  }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
@@ -1035,13 +1096,14 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d; }
+  color: var(--forthColor);
+  background-color: #6c757d00;
+  border-color: var(--secColor); }
   .btn-secondary:hover {
     color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62; }
+    background-color: var(--firstColor);
+    border-color: var(--secColor); 
+  }
   .btn-secondary:focus, .btn-secondary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
@@ -2442,35 +2504,6 @@ h1, h2, h3, h4,
 
 .bg-primary {
   background: #2b98f0 !important; }
-
-.btn {
-  padding: 12px 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600; }
-  .btn:hover, .btn:active, .btn:focus {
-    outline: none; }
-  .btn.btn-primary {
-    background: #2b98f0;
-    border: 1px solid #2b98f0;
-    color: #fff; }
-    .btn.btn-primary:hover {
-      border: 1px solid #2b98f0;
-      background: transparent;
-      color: #2b98f0; }
-  .btn.btn-secondary {
-    background: var(--thirdColor);
-    border: 1px solid var(--thirdColor);
-    color: #000000; }
-    .btn.btn-secondary:hover {
-      border: 1px solid var(--thirdColor);
-      background: transparent;
-      color: var(--thirdColor); }
 
 .ftco-intro {
   position: relative;
