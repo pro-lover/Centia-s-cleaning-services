@@ -113,6 +113,145 @@
             </div>
         </div>
     </section>
+    <div class="form-container">
+        <form id="contact" action="" method="post">
+          <h1>BOOKING </h1>
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+          <div class=" justify-content-center">
+            <div class="row">
+              <div class="col">
+                <label for="First name">First name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <label for="Last name">Last name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="col">
+                <label for="Phone No">Phone No</label>
+                <input type="text" class="form-control" placeholder="Phone No">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="Select Services">Select Services</label>
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <select name="" id="" class="form-control">
+                        <option value="">Select Services</option>
+                        <option value="">Residential Cleaning </option>
+                        <option value="">Office space Cleaning </option>
+                        <option value="">Before and After event cleaning (weddings+ birthday parties+conferences+etc)</option>
+                        <option value="">Air bnb Cleaning </option>
+                        <option value="">Garden Cleaning</option>
+                        <option value="">Tree felling Cleaning</option>
+                        <option value="">Building maintenance</option>
+                        <option value="">Rubble removal</option>
+                        <option value="">Furniture removal  (short and long distance + cross-border)</option>
+                        <option value="">Moving In/Out Cleaning</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group ">
+                  <label for="name">Select Operational Places</label>
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <select name="" id="Operational" class="form-control">
+                        <option value="">None Selected</option>
+                        <option class = "Gauteng-op" value="">Gauteng</option>
+                        <option class = "Mpumalanga-op" value="">Mpumalanga</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Gauteng">
+              <label for="name">Select Operational Places</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Centurion
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Sandton
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                <label class="form-check-label" for="exampleRadios3">
+                  Midrand
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                <label class="form-check-label" for="exampleRadios4">
+                  Pretoria
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" >
+                <label class="form-check-label" for="exampleRadios5">
+                  Johannesburg
+                </label>
+              </div>
+            </div>
+            <div class="Mpumalanga">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Piet Retief (Mkhondo)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Ermelo
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                <label class="form-check-label" for="exampleRadios3">
+                  Nelspruit
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" >
+                <label class="form-check-label" for="exampleRadios4">
+                  Malelane
+                </label>
+              </div>
+            </div>
+              <div class="form-group">
+                <label for="message">additional information</label>
+                <textarea class="form-control" id="message" rows="6"></textarea>
+              </div>
+    
+    
+            </div>
+           
+            <div class="button-container">
+              <div class="button-center ">
+                <input type="submit" value="Book Now" class="btn btn-primary">
+                <input value="Cancel" class="btn btn-secondary form-close">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
             <div class="row d-flex no-gutters">
@@ -659,19 +798,40 @@
     <script src="js/main.js"></script>
     <script src="./js/header.js"></script>
 
-    <script>
-        document.querySelector('.booking-box').addEventListener('click', function () {
-          document.querySelector('.form-container').style.display = 'flex';
-          document.querySelector('.form-container').style.position = 'fixed';
-    
-        });
-    
-        document.querySelector('.form-close').addEventListener('click', function () {
-          document.querySelector('.form-container').style.display = 'none';
-    
-        });
-    
-      </script>
+  <script>
+    document.querySelector('.booking-box').addEventListener('click', function () {
+      document.querySelector('.form-container').style.display = 'flex';
+      document.querySelector('.form-container').style.position = 'fixed';
+
+    });
+
+    document.querySelector('.form-close').addEventListener('click', function () {
+      document.querySelector('.form-container').style.display = 'none';
+
+    });
+
+
+    console.log(document.querySelector('#Operational').options);
+    document.querySelector('#Operational').addEventListener('change', function () {
+
+
+
+      console.log(document.querySelector('#Operational'));
+
+      if(document.querySelector('#Operational').options.selectedIndex === 1){
+        document.querySelector('.Gauteng').style.display = 'block';
+      document.querySelector('.Mpumalanga').style.display = 'none';
+      }else if(document.querySelector('#Operational').options.selectedIndex === 2){
+        document.querySelector('.Gauteng').style.display = 'none';
+        document.querySelector('.Mpumalanga').style.display = 'block';
+      }else{
+        document.querySelector('.Gauteng').style.display = 'none';
+        document.querySelector('.Mpumalanga').style.display = 'none';
+      }
+    });
+
+
+  </script>
 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
