@@ -84,7 +84,7 @@ body {
               rgba(223, 88, 164, 0.17) 0px 12px 13px, 
               rgba(223, 88, 164, 0.09) 0px -3px 5px;
 }
-
+#more {display: none;}
 .Gauteng {
   display: none;
 }
@@ -355,9 +355,11 @@ input[type="radio"] {
 }
 .thumbnail .item{
   width: 150px;
-  height: 220px;
+  height: 150px;
   flex-shrink: 0;
   position: relative;
+  border: solid 2px var(--secColor);
+  border-radius: 20px;
 }
 .thumbnail .item img{
   width: 100%;
@@ -366,7 +368,7 @@ input[type="radio"] {
   border-radius: 20px;
 }
 .thumbnail .item .content{
-  color: #fff;
+  color: var(--light);
   position: absolute;
   bottom: 10px;
   left: 10px;

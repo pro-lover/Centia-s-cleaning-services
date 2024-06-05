@@ -112,9 +112,14 @@
             <div class="des">
               <!-- lorem 50 -->
               Experience the nurturing touch of our meticulous residential cleaning services.
+              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+                ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+              </span>
             </div>
             <div class="buttons">
-              <button class="btn btn-primary">SEE MORE</button>
+              <button onclick="myFunction()" class="btn btn-primary 0" id="myBtn">Read more</button>
               <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
             </div>
           </div>
@@ -127,9 +132,14 @@
             <div class="topic">Services</div>
             <div class="des">
               Elevate your workspace with our personalized office cleaning solutions. 
+              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+                ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+              </span>
             </div>
             <div class="buttons">
-              <button class="btn btn-primary">SEE MORE</button>
+              <button onclick="myFunction()" class="btn btn-primary 1" id="myBtn">Read more</button>
               <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
             </div>
           </div>
@@ -142,9 +152,14 @@
             <div class="topic">Services</div>
             <div class="des">
               Leave the details to us and focus on creating cherished memories with loved ones. 
+              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+                ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+              </span>
             </div>
             <div class="buttons">
-              <button class="btn btn-primary">SEE MORE</button>
+              <button onclick="myFunction()" class="btn btn-primary 2" id="myBtn">Read more</button>
               <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
             </div>
           </div>
@@ -157,9 +172,14 @@
             <div class="topic">Services</div>
             <div class="des">
               Welcome guests with the warmth and hospitality of a cherished host.
+              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+                ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+              </span>
             </div>
             <div class="buttons">
-              <button class="btn btn-primary">SEE MORE</button>
+              <button onclick="myFunction()" class="btn btn-primary 3" id="myBtn">Read more</button>
               <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
             </div>
           </div>
@@ -172,9 +192,14 @@
             <div class="topic">Services</div>
             <div class="des">
               Welcome guests with the warmth and hospitality of a cherished host.
+              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+                ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+              </span>
             </div>
             <div class="buttons">
-              <button class="btn btn-primary">SEE MORE</button>
+              <button onclick="myFunction()" class="btn btn-primary 4" id="myBtn">Read more</button>
               <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
             </div>
           </div>
@@ -815,6 +840,29 @@
   <script src="./js/app.js"></script>
   <script src="./js/loader.js"></script>
   <script>
+    function myFunction() {
+
+      var id = 0;
+      var dots = document.querySelectorAll("#dots");
+      var moreText = document.querySelectorAll("#more");
+      var btnText = document.querySelectorAll("#myBtn");
+     
+      if (dots[id].style.display == "none") {
+
+        dots[id].style.display = "inline";
+        btnText[id].innerHTML = "Read more"; 
+        moreText[id].style.display = "none";
+
+      } else {
+
+        dots[id].style.display = "none";
+        btnText[id].innerHTML = "Read less"; 
+        moreText[id].style.display = "inline";
+
+      }
+    }
+    </script>
+  <script>
     document.querySelector('.booking-box').addEventListener('click', function () {
       document.querySelector('.form-container').style.display = 'flex';
       document.querySelector('.form-container').style.position = 'fixed';
@@ -845,8 +893,6 @@
         document.querySelector('.Mpumalanga').style.display = 'none';
       }
     });
-
-
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
