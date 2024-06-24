@@ -67,6 +67,50 @@ body {
   outline: 0 !important; }
 
   /* form */
+  .whatsapp-button{
+    font-size: 35px;
+    color: #ffffff;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    padding: 17px;
+    left: 10px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    bottom: 200px;
+    float: none;
+  }
+  .whatsapp-button i {
+    pointer-events: none;
+    display: block;
+  }
+  .bookNow-button{
+    color: #ffffff;
+    background-color: #df58a3;
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    left: 10px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    bottom: 280px;
+    float: none;
+  }
+  .bookNow-button i {
+    font-size: 16px;
+    pointer-events: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 80%;
+    vertical-align: baseline;
+    padding-top: 18px;
+
+  }
 
 .form-container {
 	max-width:800px;

@@ -39,7 +39,7 @@
 
 <body>
   <div class="loader"></div>
-  <div class="bookNow"><button>book now!</button></div>
+  <div class="bookNow"><button>BOOK NOW!</button></div>
   <i class="fa-brands fa-whatsapp"></i>
   <header>
     <div class="wrap">
@@ -86,15 +86,11 @@
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a>
-                <div class="booking-box"><button>book now!</button></div>
-              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
 
   <div class="hero-wrap js-fullheight">
@@ -121,8 +117,7 @@
               </span>
             </div>
             <div class="buttons">
-              <button onclick="myFunction(this)" class="btn btn-primary 0" id="myBtn">Read more</button>
-              <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
+              <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
@@ -141,8 +136,7 @@
               </span>
             </div>
             <div class="buttons">
-              <button onclick="myFunction(this)" class="btn btn-primary 1" id="myBtn">Read more</button>
-              <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
+              <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
@@ -161,8 +155,7 @@
               </span>
             </div>
             <div class="buttons">
-              <button onclick="myFunction(this)" class="btn btn-primary 2" id="myBtn">Read more</button>
-              <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
+              <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
@@ -181,8 +174,7 @@
               </span>
             </div>
             <div class="buttons">
-              <button onclick="myFunction(this)" class="btn btn-primary 3" id="myBtn">Read more</button>
-              <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
+              <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
@@ -199,8 +191,7 @@
               </span>
             </div>
             <div class="buttons">
-              <button onclick="myFunction(this)" class="btn btn-primary 4" id="myBtn">Read more</button>
-              <!-- <button class="btn btn-secondary">SUBSCRIBE</button> -->
+              <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
@@ -257,7 +248,12 @@
 
     </div>
   </div>
-
+<div class="whatsapp-button">
+  <i class="fa-brands fa-whatsapp "></i>
+</div>
+<div class="bookNow-button">
+  <i >book now</i>
+</div>
   <div class="form-container">
     <form id="contact" action="" method="post">
       <h1>BOOKING </h1>
@@ -834,7 +830,7 @@
   <script src="./js/header.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/loader.js"></script>
-  <script>
+  <!-- <script>
 
     function myFunction() {
       var id = 0;
@@ -864,13 +860,12 @@
 
       }
     }
-    </script>
+    </script> -->
   <script>
-    document.querySelector('.booking-box').addEventListener('click', function () {
+    function bookNow() {
       document.querySelector('.form-container').style.display = 'flex';
       document.querySelector('.form-container').style.position = 'fixed';
-
-    });
+    }
 
     document.querySelector('.form-close').addEventListener('click', function () {
       document.querySelector('.form-container').style.display = 'none';
