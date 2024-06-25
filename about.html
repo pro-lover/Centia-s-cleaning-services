@@ -87,32 +87,33 @@
                         <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a>
-                                <div class="booking-box"><button>book now!</button></div>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-  
-
     <section class="hero-wrap hero-wrap-2"
         style="background-image: url(&quot;images/bg_2.jpg&quot;); background-position: 50% 0%;"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row no-gutters slider-text align-items-end">
-                <div class="col-md-9 ftco-animate pb-5 fadeInUp ftco-animated">
+            <div class="row no-gutters slider-text align-items-center">
+                <div style="top: 70px;" class="col-md-12 ftco-animate pb-5 fadeInUp ftco-animated">
                     <p class="breadcrumbs mb-2"><span class="mr-2"><a href="/">Home <i
-                                    class="fa fa-chevron-right"></i></a></span> <span>About us <i
-                                class="fa fa-chevron-right"></i></span></p>
-                    <h1 class="mb-0 bread">About Us</h1>
+                                    class="fa fa-chevron-right"></i></a></span> 
+                                    <span>About us</span>
+                    </p>
+                    <h1 class="mb-0 bread">Where Grandma's Wisdom meets spotless cleanliness!</h1>
                 </div>
             </div>
         </div>
     </section>
+    <div class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp "></i>
+      </div>
+      <div class="bookNow-button">
+        <i onclick="bookNow(this)">BOOK NOW!</i>
+      </div>
     <div class="form-container">
         <form id="contact" action="" method="post">
           <h1>BOOKING </h1>
@@ -252,432 +253,80 @@
           </div>
         </form>
       </div>
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-        <div class="container">
-            <div class="row d-flex no-gutters">
-                <div class="col-md-6 d-flex">
-                    <div class="img d-flex align-items-center justify-content-center py-5 py-md-0"
-                        style="background-image:url(images/about.jpg);">
-                        <div class="time-open-wrap">
-                            <div class="desc p-4">
-                                <h2>Business Hours</h2>
-                                <div class="opening-hours">
-                                    <h4>Opening Days:</h4>
-                                    <p class="pl-3">
-                                        <span><strong>Monday – Friday:</strong> 9am to 20 pm</span>
-                                        <span><strong>Saturday :</strong> 9am to 17 pm</span>
-                                    </p>
-                                    <h4>Vacations:</h4>
-                                    <p class="pl-3">
-                                        <span>All Sunday Days</span>
-                                        <span>All Official Holidays</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="desc p-4 bg-secondary">
-                                <h3 class="heading">For Emergency Cases</h3>
-                                <span class="phone">+27 66 400 6884</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 pl-md-5 pt-md-5">
-                    <div class="row justify-content-start py-5">
-                        <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
-                            <span class="subheading">Welcome to Centia's Cleaning Services</span>
-                            <h2 class="mb-4">Where Grandma's Wisdom meets spotless cleanliness!</h2>
-                            <p>We are the grandmother figure of cleaning services, embodying the nurturing care and support of a beloved matriarch. Like a grandmother, we go above and beyond to ensure the well-being and happiness of our clients, fulfilling various roles beyond cleaning to create a comforting and nurturing home environment.</p>
-                        </div>
-                    </div>
-                    <div class="row ftco-counter py-5" id="section-counter">
-                        <div
-                            class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="5">5</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Years of <br>Experienced</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="300">300</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Happy <br>Customers</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="30">30</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Building <br>Cleaned</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="ftco-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-3 pr-md-4 pb-lg-0 pb-4">
-                    <div class="heading-section ftco-animate text-center text-lg-left fadeInUp ftco-animated">
-                        <span class="subheading">Team &amp; Staff</span>
-                        <h2>Our Team</h2>
-                        <p>Grandma always said, 'A clean home is a happy home!' Let Centia's Cleaning Services make your home shine</p>
+            <div class="row d-flex no-gutters">
+                <h1 class="heading-line">About <strong>Centia's Cleaning Services</strong> </h1>
+                <p>
+                    At Centia's Cleaning Service, we are more than just cleaners – we are caregivers, confidants, and companions on your journey to a clean and happy home. 
 
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 ftco-animate d-flex fadeInUp ftco-animated">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch" style="background-image: url(images/staff-1.jpg);">
-                            </div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Lloyd Wilson</h3>
-                            <span class="position mb-2">Residential Cleaning </span>
-                            <div class="faded">
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-x-twitter"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-facebook-f"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-google"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 ftco-animate d-flex fadeInUp ftco-animated">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch" style="background-image: url(images/staff-2.jpg);">
-                            </div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Lloyd Wilson</h3>
-                            <span class="position mb-2">Residential Cleaning </span>
-                            <div class="faded">
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-x-twitter"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-facebook-f"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-google"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 ftco-animate d-flex fadeInUp ftco-animated">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch" style="background-image: url(images/staff-3.jpg);">
-                            </div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Lloyd Wilson</h3>
-                            <span class="position mb-2">Residential Cleaning </span>
-                            <div class="faded">
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-x-twitter"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-facebook-f"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-google"></span></a></li>
-                                    <li class="ftco-animate fadeInUp ftco-animated"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa-brands fa-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+Inspired by the nurturing spirit of a beloved grandmother, we approach our work with the same level of care, dedication, and love that she would offer her own family. Like a grandmother, we go beyond the call of duty to ensure the well-being and happiness of our clients, offering support and comfort in times of need and creating a warm and inviting atmosphere where everyone feels welcome. With our personalized approach, attention to detail, and unwavering commitment to excellence, we strive to exceed expectations and make a positive difference in the lives of those we serve. Welcome to the Centia's Cleaning Service family – where you're not just a client, you're part of our extended family.
+
+                </p>
+                <p>We are the grandmother figure of cleaning services, embodying the nurturing care and support of a beloved matriarch. Like a grandmother, we go above and beyond to ensure the well-being and happiness of our clients, fulfilling various roles beyond cleaning to create a comforting and nurturing home environment.</p>
+                 
+            </div>          
         </div>
     </section>
-    <section class="ftco-section testimony-section bg-light">
+    <section class="ftco-section bg-dark" >
         <div class="container">
-            <div class="row justify-content-center pb-5 mb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
-                    <span class="subheading">Testimonies</span>
-                    <h2>Happy Customer</h2>
-                </div>
-            </div>
-            <div class="row ftco-animate fadeInUp ftco-animated">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel ftco-owl owl-loaded owl-drag">
-
-
-
-
-
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage"
-                                style="transform: translate3d(-1140px, 0px, 0px); transition: all 0s ease 0s; width: 4180px;">
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_3.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_1.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_2.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_1.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_2.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_3.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_1.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_2.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_1.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_2.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">person_2 Far far away, behind the word mountains, far
-                                                    from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-right"></span></div>
-                                            <div class="text">
-                                                <div class="d-flex align-items-center mb-4">
-                                                    <div class="user-img"
-                                                        style="background-image: url(images/person_3.jpg)"></div>
-                                                    <div class="pl-3">
-                                                        <p class="name">Roger Scott</p>
-                                                        <span class="position">Marketing Manager</span>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-1">Far far away, behind the word mountains, far from the
-                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav disabled"><button role="presentation" class="owl-prev"><span
-                                    class="ion-ios-arrow-back"></span></button><button role="presentation"
-                                class="owl-next"><span class="ion-ios-arrow-forward"></span></button></div>
-                        <div class="owl-dots"><button class="owl-dot active"><span></span></button><button
-                                class="owl-dot"><span></span></button></div>
-                    </div>
-                </div>
-            </div>
+            <div class="row d-flex no-gutters">
+                <h1 class="heading-line"><strong>Our Values</strong> </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Values</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Nurturing Care:</th>
+                        <td>
+                            Nurturing Care: We treat every client with the same level of care and attention as a devoted grandmother, going the extra mile to ensure their comfort and happiness.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Holistic Support:</th>
+                        <td>
+                            We believe in addressing not just the physical cleanliness of a home but also the emotional well-being of our clients, offering support and comfort in times of need.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Reliability and Trust:</th>
+                        <td>
+                            Like a dependable grandmother, we are reliable and trustworthy, always there when our clients need us and delivering consistently excellent service.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Personalization:</th>
+                        <td>
+                            We understand that every client is unique, and we tailor our services to meet their individual needs and preferences, just like a grandmother customizes her care for each family member.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Community and Connection:</th>
+                        <td>
+                            We strive to build strong connections with our clients, becoming an integral part of their extended "family" and contributing positively to our community.
+                        </td>
+                    </tr>
+                </table>
+                 
+            </div>          
         </div>
     </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <h1 class="heading-line"><strong>Mission Statement</strong></h1>
+           <p>
+            At Centia's Cleaning Service, our mission is to be more than just a cleaning service. We aspire to embody the nurturing spirit of a grandmother, providing holistic care and support to our clients beyond the task of cleaning. Through our personalized approach, unwavering reliability, and commitment to excellence, we aim to create a comforting and nurturing home environment where our clients feel valued, cared for, and at peace.
+           </p>
+                 
+            </div>          
+        </div>
+    </section>
+
     <section class="ftco-section ftco-intro"
         style="background-image: url(&quot;images/bg_3.jpg&quot;); background-position: 50% 0%;"
         data-stellar-background-ratio="0.5">
@@ -694,80 +343,50 @@
     </section>
     <footer class="footer ftco-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Centia's Cleaning Services</h2>
-                    <p>Grandma always said, "A clean home is a happy home!" Let Centia's Cleaning Services make your home shine</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
-                                    class="fa-brands fa-x-twitter"></span></a></li>
-                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
-                                    class="fa-brands fa-facebook-f"></span></a></li>
-                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
-                                    class="fa-brands fa-instagram"></span></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Latest News</h2>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Quick Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="py-1 d-block">Home</a></li>
-                        <li><a href="about.html" class="py-1 d-block">About</a></li>
-                        <li><a href="services.html" class="py-1 d-block">Services</a></li>
-                        <li><a href="contact.html" class="py-1 d-block">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Have a Questions?</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon fa fa-map-marker"></span><span class="text">11 Silwer-Eiker avenue,
-                                    Heuweloord, Centurion, 0157</span></li>
-                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+27 66 400
-                                        6884</span></a></li>
-                            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-                                        class="text">info@centiascleaningservices.co.za</span></a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-4 mb-4 mb-md-0">
+              <h2 class="footer-heading">Centia's Cleaning Services</h2>
+              <p>Grandma always said, 'A clean home is a happy home!' Let Centia's Cleaning Services make your home shine</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-x-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+              </ul>
             </div>
-            <div class="row mt-5">
-                <div class="col-md-12 text-center">
-                    <p class="copyright">
-                        Copyright ©
-                        <script type="text/javascript" async=""
-                            src="https://www.google-analytics.com/analytics.js"></script>
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Developed By <a
-                            href="https://putitdigital.co.za" target="_blank">putitdigital.co.za</a>
-                    </p>
-                </div>
+            <div class="col-md-12 col-lg-4 pl-lg-5 mb-4 mb-md-0">
+              <h2 class="footer-heading">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Home</a></li>
+                <li><a href="about.html" class="py-1 d-block">About</a></li>
+                <li><a href="services.html" class="py-1 d-block">Services</a></li>
+                <li><a href="contact.html" class="py-1 d-block">Contact</a></li>
+              </ul>
             </div>
+            <div class="col-md-12 col-lg-4 mb-4 mb-md-0">
+              <h2 class="footer-heading">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon fa fa-map-marker"></span><span class="text">11 Silwer-Eiker avenue, Heuweloord,
+                      Centurion, 0157</span></li>
+                  <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+27 66 400 6884</span></a></li>
+                  <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                        class="text">info@centiascleaningservices.co.za</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12 text-center">
+              <p class="copyright">
+                Copyright ©
+                <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | Developed By <a
+                  href="https://putitdigital.co.za" target="_blank">putitdigital.co.za</a>
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
@@ -789,41 +408,37 @@
     <script src="./js/loader.js"></script>
     <script src="js/main.js"></script>
     <script src="./js/header.js"></script>
-
-  <script>
-    document.querySelector('.booking-box').addEventListener('click', function () {
-      document.querySelector('.form-container').style.display = 'flex';
-      document.querySelector('.form-container').style.position = 'fixed';
-
-    });
-
-    document.querySelector('.form-close').addEventListener('click', function () {
-      document.querySelector('.form-container').style.display = 'none';
-
-    });
-
-
-    console.log(document.querySelector('#Operational').options);
-    document.querySelector('#Operational').addEventListener('change', function () {
-
-
-
-      console.log(document.querySelector('#Operational'));
-
-      if(document.querySelector('#Operational').options.selectedIndex === 1){
-        document.querySelector('.Gauteng').style.display = 'block';
-      document.querySelector('.Mpumalanga').style.display = 'none';
-      }else if(document.querySelector('#Operational').options.selectedIndex === 2){
-        document.querySelector('.Gauteng').style.display = 'none';
-        document.querySelector('.Mpumalanga').style.display = 'block';
-      }else{
-        document.querySelector('.Gauteng').style.display = 'none';
-        document.querySelector('.Mpumalanga').style.display = 'none';
-      }
-    });
-
-
-  </script>
+    <script>
+        function bookNow() {
+          document.querySelector('.form-container').style.display = 'flex';
+          document.querySelector('.form-container').style.position = 'fixed';
+        }
+    
+        document.querySelector('.form-close').addEventListener('click', function () {
+          document.querySelector('.form-container').style.display = 'none';
+    
+        });
+    
+    
+        console.log(document.querySelector('#Operational').options);
+        document.querySelector('#Operational').addEventListener('change', function () {
+    
+    
+    
+          console.log(document.querySelector('#Operational'));
+    
+          if(document.querySelector('#Operational').options.selectedIndex === 1){
+            document.querySelector('.Gauteng').style.display = 'block';
+          document.querySelector('.Mpumalanga').style.display = 'none';
+          }else if(document.querySelector('#Operational').options.selectedIndex === 2){
+            document.querySelector('.Gauteng').style.display = 'none';
+            document.querySelector('.Mpumalanga').style.display = 'block';
+          }else{
+            document.querySelector('.Gauteng').style.display = 'none';
+            document.querySelector('.Mpumalanga').style.display = 'none';
+          }
+        });
+      </script>
 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>

@@ -75,11 +75,11 @@ body {
     width: 67px;
     height: 67px;
     padding: 17px;
-    left: 10px;
+    left: 20px;
     position: fixed;
     z-index: 999;
     display: flex;
-    bottom: 200px;
+    bottom: 100px;
     float: none;
   }
   .whatsapp-button i {
@@ -92,26 +92,73 @@ body {
     border-radius: 50%;
     width: 67px;
     height: 67px;
-    left: 10px;
+    left: 20px;
     position: fixed;
     z-index: 999;
     display: flex;
-    bottom: 280px;
+    bottom: 180px;
     float: none;
+    animation: pulse 2s infinite;
   }
   .bookNow-button i {
     font-size: 16px;
-    pointer-events: none;
     display: block;
     text-align: center;
     font-weight: bold;
     text-transform: capitalize;
-    line-height: 80%;
+    line-height: 90%;
     vertical-align: baseline;
     padding-top: 18px;
 
   }
 
+  table {
+    border-collapse: collapse;
+    vertical-align: middle;
+  }
+  
+  th, td {
+
+    padding: 8px;
+  }
+  thead {
+  background-color:var(--firstColor);
+	
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+  }
+  thead th {
+    width: 10%;
+  }
+  tbody tr:nth-child(odd) {
+    color: var(--thirdColor);
+    background-color: #ffffff00;
+  }
+  .bg-dark h1{
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    color: var(--firstColor);
+    background-color: var(--thirdColor);
+  }
+  .heading-line{
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+.heading-line:after{
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: var(--thirdColor); 
+  
+}
 .form-container {
 	max-width:800px;
 	width:100%;
@@ -1918,7 +1965,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  background-color: var(--firstColor) !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -2459,19 +2506,20 @@ h1, h2, h3, h4,
   margin-bottom: 20px;
   z-index: 99; }
   .slider-text .breadcrumbs span {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255); 
+  }
     .slider-text .breadcrumbs span i {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255);
       font-size: 13px; }
     .slider-text .breadcrumbs span a {
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(255, 255, 255); }
       .slider-text .breadcrumbs span a:hover, .slider-text .breadcrumbs span a:focus {
         color: #2b98f0; }
         .slider-text .breadcrumbs span a:hover i, .slider-text .breadcrumbs span a:focus i {
           color: #2b98f0; }
 
 .slider-text .bread {
-  font-weight: 400 !important; }
+  font-weight: bold; }
 
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
@@ -3178,7 +3226,8 @@ textarea.form-control {
     margin-bottom: 30px;
     color: #fff;
     position: relative;
-    font-weight: 700; }
+    font-weight: 700; 
+  }
     .footer .footer-heading:after {
       position: absolute;
       bottom: -4px;
@@ -3186,7 +3235,8 @@ textarea.form-control {
       content: '';
       width: 30px;
       height: 4px;
-      background: var(--thirdColor); }
+      background: var(--thirdColor); 
+    }
   .footer ul.list-unstyled li a {
     color: rgba(255, 255, 255, 0.7); }
   .footer .block-21 .text .heading a {

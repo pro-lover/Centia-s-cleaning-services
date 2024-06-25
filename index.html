@@ -252,7 +252,7 @@
   <i class="fa-brands fa-whatsapp "></i>
 </div>
 <div class="bookNow-button">
-  <i >book now</i>
+  <i onclick="bookNow(this)">BOOK NOW!</i>
 </div>
   <div class="form-container">
     <form id="contact" action="" method="post">
@@ -745,7 +745,7 @@
   <footer class="footer ftco-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <div class="col-md-12 col-lg-4 mb-4 mb-md-0">
           <h2 class="footer-heading">Centia's Cleaning Services</h2>
           <p>Grandma always said, 'A clean home is a happy home!' Let Centia's Cleaning Services make your home shine</p>
           <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
@@ -754,32 +754,7 @@
             <li class="ftco-animate"><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-          <h2 class="footer-heading">Latest News</h2>
-          <div class="block-21 mb-4 d-flex">
-            <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="block-21 mb-4 d-flex">
-            <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+        <div class="col-md-12 col-lg-4 pl-lg-5 mb-4 mb-md-0">
           <h2 class="footer-heading">Quick Links</h2>
           <ul class="list-unstyled">
             <li><a href="#" class="py-1 d-block">Home</a></li>
@@ -788,7 +763,7 @@
             <li><a href="contact.html" class="py-1 d-block">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <div class="col-md-12 col-lg-4 mb-4 mb-md-0">
           <h2 class="footer-heading">Have a Questions?</h2>
           <div class="block-23 mb-3">
             <ul>
@@ -830,37 +805,7 @@
   <script src="./js/header.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/loader.js"></script>
-  <!-- <script>
-
-    function myFunction() {
-      var id = 0;
-      var dots = document.querySelectorAll("#dots");
-      var moreText = document.querySelectorAll("#more");
-      var btnText = document.querySelectorAll("#myBtn");
-      console.log(btnText);
-      console.log(moreText.length);
-      console.log(dots[id].style);
-
-      for (var i = 0; i < btnText.length; i++)
-      {
-        console.log(i + " : "+btnText[i].innerHTML);
-      }
-
-      if (dots[id].style.display == "none") {
-        console.log("if "+dots);
-        dots[id].style.display = "inline";
-        btnText[id].innerHTML = "Read more"; 
-        moreText[id].style.display = "none";
-
-      } else {
-        console.log("if not "+dots);
-        dots[id].style.display = "none";
-        btnText[id].innerHTML = "Read less"; 
-        moreText[id].style.display = "inline";
-
-      }
-    }
-    </script> -->
+  
   <script>
     function bookNow() {
       document.querySelector('.form-container').style.display = 'flex';
