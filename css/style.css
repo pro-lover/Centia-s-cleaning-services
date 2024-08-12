@@ -71,6 +71,7 @@ body {
     font-size: 35px;
     color: #ffffff;
     background-color: #25D366;
+  
     border-radius: 50%;
     width: 67px;
     height: 67px;
@@ -110,6 +111,9 @@ body {
     vertical-align: baseline;
     padding-top: 18px;
 
+  }
+  .btn-form{
+    width: 40%;
   }
 
   table {
@@ -449,7 +453,7 @@ input[type="radio"] {
   height: 150px;
   flex-shrink: 0;
   position: relative;
-  border: solid 2px var(--secColor);
+  border-bottom: solid 2px var(--secColor);
   border-radius: 20px;
 }
 .thumbnail .item img{
@@ -487,7 +491,7 @@ input[type="radio"] {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #eee4;
+  background-color: rgba(238, 238, 238, 0);
   border: none;
   color: #fff;
   font-family: monospace;
@@ -651,10 +655,18 @@ input[type="radio"] {
 @media screen and (max-width: 678px) {
   .carousel .list .item .content{
       padding-right: 0;
+      top: 30%;
+      
   }
+  .carousel .list .item img{
+    filter: brightness(50%);
+  }
+
   .carousel .list .item .content .title{
       font-size: 30px;
+      
   }
+  
 }
 
 /* #preloader {
@@ -2331,7 +2343,7 @@ h1, h2, h3, h4,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #fff;
+      background: #fff !important;
       position: relative;
       top: -50px;
       padding: 10px 15px; } }
@@ -2449,10 +2461,85 @@ h1, h2, h3, h4,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  position: relative; }
+  position: relative; 
+}
   @media (max-width: 1199.98px) {
     .hero-wrap {
-      background-position: center center !important; } }
+      background-position: center center !important;
+    } 
+    .whatsapp-button {
+      font-size: 54px;
+      color: #ffffff;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      padding-left: 5px;
+      padding-top: 1px;
+      padding-bottom: 8px;
+      padding-right: 8px;
+      left: 20px;
+      bottom: 30px;
+      
+ 
+    }
+    .bookNow-button i {
+      font-size: 12px;
+    }
+    .bookNow-button {
+      bottom: 100px;
+      width: 56px;
+      height: 56px;
+    }
+    .carousel .list .item .author h5{
+      color: white;
+      background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+      background-size: auto auto;
+
+      background-clip: border-box;
+      background-size: 200% auto;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+         
+    }
+    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  .form-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    top: 184px;
+    left: 0%;
+    
+  }
+  .form-container form {
+    background: #ffffff;
+    border-radius: 21px;
+    padding: 5px;
+    margin: 0px 0;
+    width: 100%;
+  }
+  .btn-form{
+    width: 60%;
+  }
+}
+
   .hero-wrap .overlay {
     position: absolute;
     top: 0;

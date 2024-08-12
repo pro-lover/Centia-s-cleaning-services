@@ -40,7 +40,6 @@
 
 <body>
   <div class="loader"></div>
-  <div class="bookNow"><button>BOOK NOW!</button></div>
   <i class="fa-brands fa-whatsapp"></i>
   <header>
     <div class="wrap">
@@ -72,10 +71,11 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="./images/logo.png" alt="">
+          <img srcset=""  src="./images/logo.png" 
+                alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
           aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,9 +103,9 @@
       <!-- list item -->
       <div class="list">
         <div class="item">
-          <img src="images/residentialCleaning.jpg">
+          <img srcset="./images/residentialCleaning.jpg , ./images/mobile/mobile_Residential_cleaning.jpg 500w" src="images/residentialCleaning.jpg" alt="">
           <div class="content">
-            <div class="author">CENTIA'S</div>
+            <div class="author"><h5>CENTIA'S</h5></div>
             <div class="title">RESIDENTIAL CLEANING</div>
             <div class="topic">Services</div>
             <div class="des">
@@ -123,9 +123,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/OfficeCleaning.jpg">
+          <img srcset="./images/officeCleaning.jpg , ./images/mobile/mobile_Office_cleaning.jpg 500w" src="images/OfficeCleaning.jpg" alt="">
           <div class="content">
-            <div class="author">CENTIA'S</div>
+            <div class="author"><h5>CENTIA'S</h5></div>
             <div class="title">OFFICE SPACE CLEANING</div>
             <div class="topic">Services</div>
             <div class="des">
@@ -142,9 +142,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/partyAndWedding.jpg">
+          <img srcset="./images/partyAndWedding.jpg , ./images/mobile/mobile_Party_and_wedding-1.jpg 500w" src="images/partyAndWedding.jpg" alt="">
           <div class="content">
-            <div class="author">CENTIA'S</div>
+            <div class="author"><h5>CENTIA'S</h></div>
             <div class="title">BEFORE AND AFTER EVENT CLEANING</div>
             <div class="topic">Services</div>
             <div class="des">
@@ -161,28 +161,29 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/furnitureRemoval.jpg">
+          <img srcset="./images/furnitureRemoval.jpg, ./images/mobile/mobile_Furniture_removal.jpg 500w" src="images/furnitureRemoval.jpg" alt="">
           <div class="content">
-            <div class="author">CENTIA'S</div>
+            <div class="author"><h5>CENTIA'S</h5></div>
             <div class="title">FURNITURE REMOVAL</div>
             <div class="topic">Services</div>
             <div class="des">
               Welcome guests with the warmth and hospitality of a cherished host.
-              <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+              <span id="dots">...</span><span class="read-more-target" id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
                 auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
                 ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
                 fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
               </span>
             </div>
+            
             <div class="buttons">
               <button onclick="bookNow(this)" class="booking-box btn btn-primary 1" id="myBtn">BOOK NOW!</button>
             </div>
           </div>
         </div>
          <div class="item">
-          <img src="images/gardenServices.jpg">
+          <img srcset="./images/gardenServices.jpg , ./images/mobile/mobile_Garden_services-1.jpg 500w" src="images/gardenServices.jpg" alt="">
           <div class="content">
-            <div class="author">CENTIA'S</div>
+            <div class="author"><h5>CENTIA'S</h5></div>
             <div class="title">GARDEN</div>
             <div class="topic">Services</div>
             <div class="des">
@@ -200,7 +201,7 @@
       <!-- list thumnail -->
       <div class="thumbnail">
         <div class="item">
-          <img src="images/residentialCleaning.jpg">
+          <img srcset="" src="images/residentialCleaning.jpg">
           <div class="content">
             <div class="title">
               RESIDENTIAL CLEANING
@@ -208,7 +209,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/officeCleaning.jpg">
+          <img srcset="" src="images/officeCleaning.jpg">
           <div class="content">
             <div class="title">
               OFFICE SPACE CLEANING
@@ -216,7 +217,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/partyAndWedding.jpg">
+          <img srcset="" src="images/partyAndWedding.jpg">
           <div class="content">
             <div class="title">
               BEFORE AND AFTER EVENT CLEANING
@@ -224,7 +225,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/furnitureRemoval.jpg">
+          <img srcset="" src="images/furnitureRemoval.jpg">
           <div class="content">
             <div class="title">
               FURNITURE REMOVAL
@@ -232,7 +233,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/gardenServices.jpg">
+          <img srcset="" src="images/gardenServices.jpg">
           <div class="content">
             <div class="title">
               GARDEN SERVICES
@@ -243,14 +244,14 @@
       <!-- next prev -->
 
       <div class="arrows">
-        <button id="prev" > < </button>
-        <button id="next"> > </button>
+        <button id="prev" > </button>
+        <button id="next"> </button>
       </div>
 
     </div>
   </div>
 <div class="whatsapp-button">
-  <i class="fa-brands fa-whatsapp "></i>
+  <i class="fa-brands fa-whatsapp"></i>
 </div>
 <div class="bookNow-button">
   <i onclick="bookNow(this)">BOOK NOW!</i>
@@ -377,20 +378,21 @@
             </label>
           </div>
         </div>
-          <div class="form-group">
+        <div class="row">
+          <div class="col">
             <label for="message">additional information</label>
             <textarea class="form-control" id="message" rows="6"></textarea>
           </div>
-
-
         </div>
-       
-        <div class="button-container">
-          <div class="button-center ">
-            <input type="submit" value="Book Now" class="btn btn-primary">
-            <input value="Cancel" class="btn btn-secondary form-close">
+        <div class="row">
+          <div class="col">
+            <input style="float: right;" type="submit" value="Book Now" class="btn-form btn btn-primary">
+          </div>
+          <div class="col">
+            <input style="float: left;" value="Cancel" class="btn-form btn btn-secondary form-close">
           </div>
         </div>
+      </div>
       </div>
     </form>
   </div>
@@ -439,7 +441,7 @@
                   <strong class="number" data-number="5">0</strong>
                 </div>
                 <div class="text">
-                  <span>Years of <br>Experienced</span>
+                  <span>Years of Experienced</span>
                 </div>
               </div>
             </div>
@@ -449,7 +451,7 @@
                   <strong class="number" data-number="300">0</strong>
                 </div>
                 <div class="text">
-                  <span>Happy <br>Customers</span>
+                  <span>Happy Customers</span>
                 </div>
               </div>
             </div>
@@ -459,7 +461,7 @@
                   <strong class="number" data-number="30">0</strong>
                 </div>
                 <div class="text">
-                  <span>Building <br>Cleaned</span>
+                  <span>Building Cleaned</span>
                 </div>
               </div>
             </div>
