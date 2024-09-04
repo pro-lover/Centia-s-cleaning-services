@@ -328,7 +328,7 @@
         <i onclick="bookNow(this)">BOOK NOW!</i>
     </div>
     <div class="form-container">
-        <form id="contact" action="./connect.php" method="post">
+        <form id="contact" name="emailContact" method="post">
             <h1>BOOKING </h1>
             <h4>Contact us today, and get reply with in 24 hours!</h4>
             <div class=" justify-content-center">
