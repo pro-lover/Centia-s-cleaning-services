@@ -42,7 +42,7 @@
     <?php 
       if(!empty($_POST["send"])){
         $firstName = $_POST["firstName"];
-        $toEmail = "centiascleaningservices@gmail.com";
+        $toEmail = "info@centiascleaningservices.co.za";
         
         $mailHeaders = $_POST["Name is ". $firstName];
         
@@ -469,7 +469,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input style="float: right;" type="submit" name="send" value="Book Now"
+                        <input style="float: right;" type="submit" name="send" value="submit"
                             class="btn-form btn btn-primary">
                     </div>
                     <div class="col">
