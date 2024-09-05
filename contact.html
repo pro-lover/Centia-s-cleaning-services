@@ -93,28 +93,28 @@
     <i onclick="bookNow(this)">BOOK NOW!</i>
   </div>
   <div class="form-container">
-    <form id="contact" action="./connect.php" method="post">
+    <form action="./connect.php" id="contact" name="emailContact" method="post">
       <h1>BOOKING </h1>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
       <div class=" justify-content-center">
         <div class="row">
           <div class="col">
             <label for="First name">First name</label>
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="firstName" required placeholder="First name">
           </div>
           <div class="col">
             <label for="Last name">Last name</label>
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" class="form-control" name="lastName" required placeholder="Last name">
           </div>
         </div>
         <div class="row">
           <div class="col">
             <label for="Email">Email</label>
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control" name="email" required placeholder="Email">
           </div>
           <div class="col">
             <label for="Phone No">Phone No</label>
-            <input type="text" class="form-control" placeholder="Phone No">
+            <input type="text" class="form-control" name="phoneNo" required placeholder="Phone No">
           </div>
         </div>
         <div class="row">
@@ -123,19 +123,24 @@
               <label for="Select Services">Select Services</label>
               <div class="form-field">
                 <div class="select-wrap">
-                  <select name="" id="" class="form-control">
+                  <select id="" name="services" required class="form-control">
                     <option value="">Select Services</option>
-                    <option value="">Residential Cleaning </option>
-                    <option value="">Office space Cleaning </option>
-                    <option value="">Before and After event cleaning (weddings+ birthday parties+conferences+etc)
+                    <option value="Residential_Cleaning">Residential Cleaning </option>
+                    <option value="Office_space_Cleaning">Office space Cleaning </option>
+                    <option value="Before_After">Before and After event cleaning (weddings+
+                      birthday
+                      parties+conferences+etc)
                     </option>
-                    <option value="">Air bnb Cleaning </option>
-                    <option value="">Garden Cleaning</option>
-                    <option value="">Tree felling Cleaning</option>
-                    <option value="">Building maintenance</option>
-                    <option value="">Rubble removal</option>
-                    <option value="">Furniture removal (short and long distance + cross-border)</option>
-                    <option value="">Moving In/Out Cleaning</option>
+                    <option value="Air bnb Cleaning">Air bnb Cleaning </option>
+                    <option value="Garden Cleaning">Garden Cleaning</option>
+                    <option value="Tree felling Cleaning">Tree felling Cleaning</option>
+                    <option value="Building maintenance">Building maintenance</option>
+                    <option value="Rubble removal">Rubble removal</option>
+                    <option value="Furniture removal (short and long distance +
+                                        cross-border)">Furniture removal (short and long distance +
+                      cross-border)
+                    </option>
+                    <option value="Moving In/Out Cleaning">Moving In/Out Cleaning</option>
                   </select>
                 </div>
               </div>
@@ -146,10 +151,10 @@
               <label for="name">Select Operational Places</label>
               <div class="form-field">
                 <div class="select-wrap">
-                  <select name="" id="Operational" class="form-control">
-                    <option value="">None Selected</option>
-                    <option class="Gauteng-op" value="">Gauteng</option>
-                    <option class="Mpumalanga-op" value="">Mpumalanga</option>
+                  <select id="Operational" name="operationalCity" class="form-control">
+                    <option value="None Selected">None Selected</option>
+                    <option class="Gauteng-op" value="Gauteng">Gauteng</option>
+                    <option class="Mpumalanga-op" value="Mpumalanga">Mpumalanga</option>
                   </select>
                 </div>
               </div>
@@ -159,32 +164,31 @@
         <div class="Gauteng">
           <label for="name">Select Operational Places</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1" value="Centurion" checked>
             <label class="form-check-label" for="exampleRadios1">
               Centurion
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2" value="Sandton">
             <label class="form-check-label" for="exampleRadios2">
               Sandton
             </label>
           </div>
           <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3" value="Midrand">
             <label class="form-check-label" for="exampleRadios3">
               Midrand
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4" value="Pretoria">
             <label class="form-check-label" for="exampleRadios4">
               Pretoria
             </label>
           </div>
           <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios5" value="Johannesburg">
             <label class="form-check-label" for="exampleRadios5">
               Johannesburg
             </label>
@@ -192,26 +196,26 @@
         </div>
         <div class="Mpumalanga">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1"
+              value="Piet Retief (Mkhondo)" checked>
             <label class="form-check-label" for="exampleRadios1">
               Piet Retief (Mkhondo)
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2" value="Ermelo">
             <label class="form-check-label" for="exampleRadios2">
               Ermelo
             </label>
           </div>
           <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3" value="Nelspruit">
             <label class="form-check-label" for="exampleRadios3">
               Nelspruit
             </label>
           </div>
           <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4" value="Malelane">
             <label class="form-check-label" for="exampleRadios4">
               Malelane
             </label>
@@ -220,12 +224,12 @@
         <div class="row">
           <div class="col">
             <label for="message">additional information</label>
-            <textarea class="form-control" id="message" rows="6"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="6"></textarea>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <input style="float: right;" type="submit" value="Book Now" class="btn-form btn btn-primary">
+            <input style="float: right;" type="submit" name="send" value="submit" class="btn-form btn btn-primary">
           </div>
           <div class="col">
             <input style="float: left;" value="Cancel" class="btn-form btn btn-secondary form-close">
@@ -263,7 +267,7 @@
                     <span class="fa fa-map-marker"></span>
                   </div>
                   <div class="text">
-                    <p><span>Address:</span> 11 Silwer-Eiker avenue, Heuweloord, Centurion, 0157 </p>
+                    <p><span>Address:</span> 11 Silwer-Eiker avenue, Heuweloord, Centurion, 0173 </p>
                   </div>
                 </div>
               </div>
@@ -303,45 +307,153 @@
             <div class="row no-gutters">
               <div class="col-md-7">
                 <div class="contact-wrap w-100 p-md-5 p-4">
-                  <h3 class="mb-4">Contact Us</h3>
+                  <h3 class="mb-4"><h1>BOOKING NOW</h1></h3>
                   <div id="form-message-warning" class="mb-4"></div>
                   <div id="form-message-success" class="mb-4">
-                    Your message was sent, thank you!
+                    <h4>Contact us today, and get reply with in 24 hours!</h4>
                   </div>
-                  <form method="POST" action="./connect.php" id="contactForm" name="contactForm" class="contactForm">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="name">Full Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                  <form action="./connect.php" id="contact" name="emailContact" method="post">
+                    <div class=" justify-content-center">
+                      <div class="row">
+                        <div class="col">
+                          <label for="First name">First name</label>
+                          <input type="text" class="form-control" name="firstName" required placeholder="First name">
+                        </div>
+                        <div class="col">
+                          <label for="Last name">Last name</label>
+                          <input type="text" class="form-control" name="lastName" required placeholder="Last name">
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                      <div class="row">
+                        <div class="col">
+                          <label for="Email">Email</label>
+                          <input type="email" class="form-control" name="email" required placeholder="Email">
+                        </div>
+                        <div class="col">
+                          <label for="Phone No">Phone No</label>
+                          <input type="text" class="form-control" name="phoneNo" required placeholder="Phone No">
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="Select Services">Select Services</label>
+                            <div class="form-field">
+                              <div class="select-wrap">
+                                <select id="" name="services" required class="form-control">
+                                  <option value="">Select Services</option>
+                                  <option value="Residential_Cleaning">Residential Cleaning </option>
+                                  <option value="Office_space_Cleaning">Office space Cleaning </option>
+                                  <option value="Before_After">Before and After event cleaning (weddings+
+                                    birthday
+                                    parties+conferences+etc)
+                                  </option>
+                                  <option value="Air bnb Cleaning">Air bnb Cleaning </option>
+                                  <option value="Garden Cleaning">Garden Cleaning</option>
+                                  <option value="Tree felling Cleaning">Tree felling Cleaning</option>
+                                  <option value="Building maintenance">Building maintenance</option>
+                                  <option value="Rubble removal">Rubble removal</option>
+                                  <option value="Furniture removal (short and long distance +
+                                                      cross-border)">Furniture removal (short and long distance +
+                                    cross-border)
+                                  </option>
+                                  <option value="Moving In/Out Cleaning">Moving In/Out Cleaning</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group ">
+                            <label for="name">Select Operational Places</label>
+                            <div class="form-field">
+                              <div class="select-wrap">
+                                <select id="Operational" name="operationalCity" class="form-control">
+                                  <option value="None Selected">None Selected</option>
+                                  <option class="Gauteng-op" value="Gauteng">Gauteng</option>
+                                  <option class="Mpumalanga-op" value="Mpumalanga">Mpumalanga</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="#">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                            placeholder="Message"></textarea>
+                      <div class="Gauteng">
+                        <label for="name">Select Operational Places</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1" value="Centurion" checked>
+                          <label class="form-check-label" for="exampleRadios1">
+                            Centurion
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2" value="Sandton">
+                          <label class="form-check-label" for="exampleRadios2">
+                            Sandton
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3" value="Midrand">
+                          <label class="form-check-label" for="exampleRadios3">
+                            Midrand
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4" value="Pretoria">
+                          <label class="form-check-label" for="exampleRadios4">
+                            Pretoria
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios5" value="Johannesburg">
+                          <label class="form-check-label" for="exampleRadios5">
+                            Johannesburg
+                          </label>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary">
-                          <div class="submitting"></div>
+                      <div class="Mpumalanga">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1"
+                            value="Piet Retief (Mkhondo)" checked>
+                          <label class="form-check-label" for="exampleRadios1">
+                            Piet Retief (Mkhondo)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2" value="Ermelo">
+                          <label class="form-check-label" for="exampleRadios2">
+                            Ermelo
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3" value="Nelspruit">
+                          <label class="form-check-label" for="exampleRadios3">
+                            Nelspruit
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4" value="Malelane">
+                          <label class="form-check-label" for="exampleRadios4">
+                            Malelane
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <label for="message">additional information</label>
+                          <textarea class="form-control" id="message" name="message" rows="6"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <input style="float: right;" type="submit" name="send" value="submit" class="btn-form btn btn-primary">
+                        </div>
+                        <div class="col">
+                          <input style="float: left;" value="Cancel" class="btn-form btn btn-secondary form-close">
                         </div>
                       </div>
                     </div>
+              
                   </form>
                 </div>
               </div>
@@ -374,7 +486,7 @@
               <h2 class="mb-0" style="color:white; font-size: 24px;">Subcribe to our Newsletter</h2>
             </div>
             <div class="col-md-6 d-flex align-items-center">
-              <form action="./connect.php"class="subscribe-form">
+              <form action="./connect.php" class="subscribe-form">
                 <div class="form-group d-flex">
                   <input type="text" class="form-control" placeholder="Enter email address">
                   <input type="submit" value="Subscribe" class="submit px-3">
@@ -416,7 +528,7 @@
           <div class="block-23 mb-3">
             <ul>
               <li><span class="icon fa fa-map-marker"></span><span class="text">11 Silwer-Eiker avenue, Heuweloord,
-                  Centurion, 0157</span></li>
+                  Centurion, 0173</span></li>
               <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+27 66 400 6884</span></a></li>
               <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
                     class="text">info@centiascleaningservices.co.za</span></a></li>

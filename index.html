@@ -26,33 +26,20 @@
     <link rel="stylesheet" href="./css/style.scss" />
 
     <style type="text/css">
-    .scrollax-performance,
-    .scrollax-performance *,
-    .scrollax-performance *:before,
-    .scrollax-performance *:after {
-        pointer-events: none !important;
-        -webkit-animation-play-state: paused !important;
-        animation-play-state: paused !important;
-    }
+        .scrollax-performance,
+        .scrollax-performance *,
+        .scrollax-performance *:before,
+        .scrollax-performance *:after {
+            pointer-events: none !important;
+            -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+        }
     </style>
 
 </head>
 
 <body>
-    <?php 
-      if(!empty($_POST["send"])){
-        $firstName = $_POST["firstName"];
-        $toEmail = "info@centiascleaningservices.co.za";
-        
-        $mailHeaders = $_POST["Name is ". $firstName];
-        
-        if(mail($toEmail,$firstName,$mailHeaders))
-        {
-          $message = "Your information is received successfully";
-        }
-        
-      }
-    ?>
+
     <div class="loader">
     </div>
     <i class="fa-brands fa-whatsapp"></i>
@@ -328,7 +315,7 @@
         <i onclick="bookNow(this)">BOOK NOW!</i>
     </div>
     <div class="form-container">
-        <form id="contact" name="emailContact" method="post">
+        <form action="./connect.php" id="contact" name="emailContact" method="post">
             <h1>BOOKING </h1>
             <h4>Contact us today, and get reply with in 24 hours!</h4>
             <div class=" justify-content-center">
@@ -339,17 +326,17 @@
                     </div>
                     <div class="col">
                         <label for="Last name">Last name</label>
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <input type="text" class="form-control" name="lastName" required placeholder="Last name">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="Email">Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" name="email" required placeholder="Email">
                     </div>
                     <div class="col">
                         <label for="Phone No">Phone No</label>
-                        <input type="text" class="form-control" placeholder="Phone No">
+                        <input type="text" class="form-control" name="phoneNo" required placeholder="Phone No">
                     </div>
                 </div>
                 <div class="row">
@@ -358,21 +345,24 @@
                             <label for="Select Services">Select Services</label>
                             <div class="form-field">
                                 <div class="select-wrap">
-                                    <select name="" id="" class="form-control">
+                                    <select id="" name="services" required class="form-control">
                                         <option value="">Select Services</option>
-                                        <option value="">Residential Cleaning </option>
-                                        <option value="">Office space Cleaning </option>
-                                        <option value="">Before and After event cleaning (weddings+ birthday
+                                        <option value="Residential_Cleaning">Residential Cleaning </option>
+                                        <option value="Office_space_Cleaning">Office space Cleaning </option>
+                                        <option value="Before_After">Before and After event cleaning (weddings+
+                                            birthday
                                             parties+conferences+etc)
                                         </option>
-                                        <option value="">Air bnb Cleaning </option>
-                                        <option value="">Garden Cleaning</option>
-                                        <option value="">Tree felling Cleaning</option>
-                                        <option value="">Building maintenance</option>
-                                        <option value="">Rubble removal</option>
-                                        <option value="">Furniture removal (short and long distance + cross-border)
+                                        <option value="Air bnb Cleaning">Air bnb Cleaning </option>
+                                        <option value="Garden Cleaning">Garden Cleaning</option>
+                                        <option value="Tree felling Cleaning">Tree felling Cleaning</option>
+                                        <option value="Building maintenance">Building maintenance</option>
+                                        <option value="Rubble removal">Rubble removal</option>
+                                        <option value="Furniture removal (short and long distance +
+                                            cross-border)">Furniture removal (short and long distance +
+                                            cross-border)
                                         </option>
-                                        <option value="">Moving In/Out Cleaning</option>
+                                        <option value="Moving In/Out Cleaning">Moving In/Out Cleaning</option>
                                     </select>
                                 </div>
                             </div>
@@ -383,10 +373,10 @@
                             <label for="name">Select Operational Places</label>
                             <div class="form-field">
                                 <div class="select-wrap">
-                                    <select name="" id="Operational" class="form-control">
-                                        <option value="">None Selected</option>
-                                        <option class="Gauteng-op" value="">Gauteng</option>
-                                        <option class="Mpumalanga-op" value="">Mpumalanga</option>
+                                    <select id="Operational" name="operationalCity" class="form-control">
+                                        <option value="None Selected">None Selected</option>
+                                        <option class="Gauteng-op" value="Gauteng">Gauteng</option>
+                                        <option class="Mpumalanga-op" value="Mpumalanga">Mpumalanga</option>
                                     </select>
                                 </div>
                             </div>
@@ -396,36 +386,36 @@
                 <div class="Gauteng">
                     <label for="name">Select Operational Places</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1" checked>
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1"
+                            value="Centurion" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Centurion
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                            value="option2">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2"
+                            value="Sandton">
                         <label class="form-check-label" for="exampleRadios2">
                             Sandton
                         </label>
                     </div>
                     <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                            value="option3">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3"
+                            value="Midrand">
                         <label class="form-check-label" for="exampleRadios3">
                             Midrand
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
-                            value="option4">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4"
+                            value="Pretoria">
                         <label class="form-check-label" for="exampleRadios4">
                             Pretoria
                         </label>
                     </div>
                     <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5"
-                            value="option5">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios5"
+                            value="Johannesburg">
                         <label class="form-check-label" for="exampleRadios5">
                             Johannesburg
                         </label>
@@ -433,29 +423,28 @@
                 </div>
                 <div class="Mpumalanga">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1" checked>
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios1"
+                            value="Piet Retief (Mkhondo)" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Piet Retief (Mkhondo)
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                            value="option2">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios2" value="Ermelo">
                         <label class="form-check-label" for="exampleRadios2">
                             Ermelo
                         </label>
                     </div>
                     <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                            value="option3">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios3"
+                            value="Nelspruit">
                         <label class="form-check-label" for="exampleRadios3">
                             Nelspruit
                         </label>
                     </div>
                     <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
-                            value="option4">
+                        <input class="form-check-input" type="radio" name="townCity" id="exampleRadios4"
+                            value="Malelane">
                         <label class="form-check-label" for="exampleRadios4">
                             Malelane
                         </label>
@@ -464,7 +453,7 @@
                 <div class="row">
                     <div class="col">
                         <label for="message">additional information</label>
-                        <textarea class="form-control" id="message" rows="6"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="6"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -475,9 +464,6 @@
                     <div class="col">
                         <input style="float: left;" value="Cancel" class="btn-form btn btn-secondary form-close">
                     </div>
-                    <?php if(!empty($message)){?>
-                    <?php echo $message; ?>
-                    <?php } ?>
                 </div>
             </div>
 
@@ -642,8 +628,8 @@
                             <span class="fa-solid fa-hand-sparkles"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Window Cleaning</h3>
-                            <p> Experience the nurturing touch of our meticulous residential cleaning services.</p>
+                            <h3 class="heading">Appliance Cleaning</h3>
+                            <p> Keep your appliances spotless and efficient with Centia's cleaning services. </p>
                             <p><a href="services.html" class="btn-custom">Read more</a></p>
                         </div>
                     </div>
@@ -774,7 +760,7 @@
                             <li><span class="icon fa fa-map-marker"></span><span class="text">11 Silwer-Eiker
                                     avenue,
                                     Heuweloord,
-                                    Centurion, 0157</span></li>
+                                    Centurion, 0173</span></li>
                             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+27 66 400
                                         6884</span></a></li>
                             <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
@@ -790,7 +776,7 @@
                         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
                         </script>
                         <script>
-                        document.write(new Date().getFullYear());
+                            document.write(new Date().getFullYear());
                         </script> All rights reserved | Developed By <a href="https://putitdigital.co.za"
                             target="_blank">putitdigital.co.za</a>
                     </p>
@@ -817,45 +803,45 @@
     <script src="./js/loader.js"></script>
 
     <script>
-    function bookNow() {
-        document.querySelector('.form-container').style.display = 'flex';
-        document.querySelector('.form-container').style.position = 'fixed';
-    }
-
-    document.querySelector('.form-close').addEventListener('click', function() {
-        document.querySelector('.form-container').style.display = 'none';
-
-    });
-
-
-    console.log(document.querySelector('#Operational').options);
-    document.querySelector('#Operational').addEventListener('change', function() {
-
-
-
-        console.log(document.querySelector('#Operational'));
-
-        if (document.querySelector('#Operational').options.selectedIndex === 1) {
-            document.querySelector('.Gauteng').style.display = 'block';
-            document.querySelector('.Mpumalanga').style.display = 'none';
-        } else if (document.querySelector('#Operational').options.selectedIndex === 2) {
-            document.querySelector('.Gauteng').style.display = 'none';
-            document.querySelector('.Mpumalanga').style.display = 'block';
-        } else {
-            document.querySelector('.Gauteng').style.display = 'none';
-            document.querySelector('.Mpumalanga').style.display = 'none';
+        function bookNow() {
+            document.querySelector('.form-container').style.display = 'flex';
+            document.querySelector('.form-container').style.position = 'fixed';
         }
-    });
+
+        document.querySelector('.form-close').addEventListener('click', function () {
+            document.querySelector('.form-container').style.display = 'none';
+
+        });
+
+
+        console.log(document.querySelector('#Operational').options);
+        document.querySelector('#Operational').addEventListener('change', function () {
+
+
+
+            console.log(document.querySelector('#Operational'));
+
+            if (document.querySelector('#Operational').options.selectedIndex === 1) {
+                document.querySelector('.Gauteng').style.display = 'block';
+                document.querySelector('.Mpumalanga').style.display = 'none';
+            } else if (document.querySelector('#Operational').options.selectedIndex === 2) {
+                document.querySelector('.Gauteng').style.display = 'none';
+                document.querySelector('.Mpumalanga').style.display = 'block';
+            } else {
+                document.querySelector('.Gauteng').style.display = 'none';
+                document.querySelector('.Mpumalanga').style.display = 'none';
+            }
+        });
     </script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-23581568-13');
+        gtag('config', 'UA-23581568-13');
     </script>
 
 </body>
